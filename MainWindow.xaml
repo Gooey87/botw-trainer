@@ -89,14 +89,14 @@
 
                     <DataGrid x:Name="DebugGrid" AutoGenerateColumns="False" Margin="0,10,0,0">
                         <DataGrid.Columns>
-                            <DataGridTextColumn Header="Name" Width="150" Binding="{Binding Name}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Address" Width="100" Binding="{Binding AddressHex, Mode=OneWay}"></DataGridTextColumn>
-                            <DataGridTextColumn Header="Page" Width="50" Binding="{Binding Page}"></DataGridTextColumn>
-                            <DataGridTextColumn Header="Unknown" Width="50" Binding="{Binding Unknown}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Inventory" Width="150" Binding="{Binding Defined_Name, Mode=OneWay}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Status" Width="75" Binding="{Binding EquippedHex, Mode=OneWay}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Value Type" Width="75" Binding="{Binding Page}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Value" Width="100" Binding="{Binding Value}"></DataGridTextColumn>
-                            <DataGridTextColumn Header="Equipped" Width="75" Binding="{Binding EquippedHex, Mode=OneWay}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Mod Amount" Width="75" Binding="{Binding ModAmountHex, Mode=OneWay}"></DataGridTextColumn>
                             <DataGridTextColumn Header="Mod Type" Width="75" Binding="{Binding ModTypeHex, Mode=OneWay}"></DataGridTextColumn>
+                            <DataGridTextColumn Header="Unknown" Width="75" Binding="{Binding Unknown}"></DataGridTextColumn>
                         </DataGrid.Columns>
                     </DataGrid>
 

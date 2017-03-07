@@ -9,6 +9,49 @@
 
         public string Name { get; set; }
 
+        public string Defined_Name
+        {
+            get
+            {
+                var a = (this.Name);
+                var b = "-";
+                if (a == "BombArrow A")
+                {
+                    b = "Bomb Arrow";
+                }
+                else if (a == "ElectricArrow")
+                {
+                    b = "Shock Arrow";
+                }
+                else if (a == "FireArrow")
+                {
+                    b = "Fire Arrow";
+                }
+                else if (a == "NormalArrow")
+                {
+                    b = "Arrow";
+                }
+                else if (a == "Weapon Lsword 060")
+                {
+                    b = "Fierce Deity Sword";
+                }
+                else if (a == "Armor 229 Upper")
+                {
+                    b = "Fierce Deity Armor";
+                }
+                else if (a == "Armor 229 Lower")
+                {
+                    b = "Fierce Deity Boots";
+                }
+                else if (a == "Armor 229 Head")
+                {
+                    b = "Fierce Deity Mask";
+                }
+                else b = a;
+                return b.ToString();
+            }
+        }
+
         public uint Address { get; set; }
 
         public string AddressHex
@@ -69,5 +112,6 @@
         public int Page { get; set; }
 
         public int Unknown { get; set; }
+
     }
 }
